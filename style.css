@@ -246,8 +246,8 @@ body {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
-}
- .data-section {
+}               
+   .data-section {
                 color:blue; 
             }
             .data-section h2{
@@ -262,7 +262,7 @@ body {
                 color:red;
             }
             .event-section{
-                background-color:ghostwhite;
+                background-color:gray;
                 padding: 0px;
             }
             .form h2{
@@ -273,9 +273,23 @@ body {
                 color: red;
             }
             .ssss{
-                background-color: ghostwhite;
+                background-color: gray;
             }
-          
+            .post-style-1 .image-section{
+                height: 250px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .post-style-1 p{
+                text-orientation: sideways;
+            }
+           
+
+
+                               
+             
+           
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -284,6 +298,7 @@ body {
     width: 100%;
     padding: 0;
   }
+
 }
 
 </style>
