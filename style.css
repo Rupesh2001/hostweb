@@ -5,16 +5,43 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+
 .container{
     width: 100%;
-    min-height: 100vh;
+    min-height: 600px;
     padding: 1% 8% 0% 8%;
     overflow: hidden;
-    background-image: url(image/aa.jpg);
+    background-image: url(image/html.jpeg);
     background-size:cover;
     box-sizing:border-box ;
 
 }
+.container:hover
+{
+     width: 100%;
+    min-height: 600px;
+    padding: 1% 8% 0% 8%;
+    overflow: hidden;
+    background-image: url(image/dl.jpeg);
+    background-size:cover;
+    box-sizing:border-box ;
+}
+
+  /*  .cover {
+      width: 100%;
+      height: 600px;
+      background: url("image/aa.jpg")
+       center no-repeat;
+      background-size: cover;
+    }
+
+    .cover:hover {
+      width: 100%;
+      height: 600px;
+      background: url("/aa.jpg") 
+      center no-repeat;
+      background-size: cover;
+    }*/
 
 .navbar{
     width: 100%;
@@ -110,51 +137,153 @@ button a{
     position: absolute;
     left: -40px;
 }
-
-
-
 @media only screen and (max-width:700px){
-    nav ul{
-        width: 100%;
-        background: #222831;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        z-index: 2;
-        overflow: hidden;
-        transition: 1s;
-        text-align:center;
-    }
-    
-    nav ul li{
-        display: block ;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width:100%;
-        clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 21% 52%, 0 0);
-        font-size:20px;
-        font-weight: 999 ;
-    }
-    nav ul li:hover{
-      background-color:#393E46 ;
-    }
-    nav ul li a{
-        color: white;
-        
-    }
-    
-    
-    .menu-icon{
-        display: block;
-    }
-    .row{
-        flex-direction: column-reverse;
-        margin: 0px;
-    }
-    .box-1 h1{
-        Font-size:40px;
-    }
-   
+
+.container
+{
+    background-size: fit;
+    background-repeat: no-repeat;
     
 }
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right:30px;
+
+}
+.box-1 h1{
+    font-size: 20px;
+    color: #C9CCD5;
+}
+}
+@media only screen and (max-width:100px){
+
+.container
+{
+    background-size: fit;
+    background-repeat: no-repeat;
+    
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right:30px;
+
+}
+.box-1 h1{
+    font-size: 10px;
+    color: #C9CCD5;
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color:ghostwhite;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg img{
+    height: 50%;
+    width: 50%;
+}
+.row hover
+{
+    background-color: red;
+}
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+ .data-section {
+                color:blue; 
+            }
+            .data-section h2{
+                color: blue;
+                text-align:left;
+                padding-left: 90px;
+            }
+            .venue-section p{
+                padding-left: 10px;
+            }
+            .evvent{
+                color:red;
+            }
+            .event-section{
+                background-color:ghostwhite;
+                padding: 0px;
+            }
+            .form h2{
+                color:red;
+                text-align: left;
+            }
+            .ssss legend{
+                color: red;
+            }
+            .ssss{
+                background-color: ghostwhite;
+            }
+          
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
 </style>
