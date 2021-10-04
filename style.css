@@ -156,25 +156,7 @@ nav ul li{
     color: #C9CCD5;
 }
 }
-@media only screen and (max-width:100px){
 
-.container
-{
-    background-size: fit;
-    background-repeat: no-repeat;
-    
-}
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin-right:30px;
-
-}
-.box-1 h1{
-    font-size: 10px;
-    color: #C9CCD5;
-}
-}
 
 * {
   box-sizing: border-box;
