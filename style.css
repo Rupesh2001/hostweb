@@ -156,7 +156,7 @@ nav ul li{
     color: #C9CCD5;
 }
 }
-@media only screen and (max-width:100px){
+@media only screen and (max-width:480px){
 
 .container
 {
