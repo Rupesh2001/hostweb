@@ -9,7 +9,7 @@
 .container{
     width: 100%;
     min-height: 600px;
-   
+    padding: 1% 8% 0% 8%;
     overflow: hidden;
     background-image: url(image/html.jpeg);
     background-size:cover;
@@ -20,7 +20,7 @@
 {
      width: 100%;
     min-height: 600px;
-  
+    padding: 1% 8% 0% 8%;
     overflow: hidden;
     background-image: url(image/dl.jpeg);
     background-size:cover;
@@ -48,7 +48,9 @@
     display: flex;
     align-items: center;
 }
-
+.fakeimg img{
+    width: 50%
+}
 #name{
     color: red;
     margin-left: 20px;
@@ -137,26 +139,76 @@ button a{
     position: absolute;
     left: -40px;
 }
-@media only screen and (max-width:800px){
-
-.container
-{
-    background-size: fit;
-    background-repeat: no-repeat;
-    
+@media (min-width:600px) {
+    .container
+    {
+        width: 100%;
+    }
+   nav{
+    flex:1;
+    text-align:center;
 }
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    margin-right:30px;
+    margin-right:20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+nav ul li a:hover{
+    color: rgb(253, 7, 40);
+    
+}
+}/*
+@media only screen and (max-width:700px){
 
-}
-.box-1 h1{
-    font-size: 20px;
-    color: #C9CCD5;
-}
-}
 
+    nav ul{
+        width: 100%;
+        background: #222831;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+        overflow: hidden;
+        transition: 1s;
+        text-align:center;
+    }
+    
+    nav ul li{
+        display: block ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width:100%;
+        clip-path: polygon(100% 0%, 80% 50%, 100% 100%, 0 100%, 21% 52%, 0 0);
+        font-size:20px;
+        font-weight: 999 ;
+    }
+    nav ul li:hover{
+      background-color:#393E46 ;
+    }
+    nav ul li a{
+        color: white;
+        
+    }
+    
+    
+    .menu-icon{
+        display: block;
+    }
+    .row{
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    .box-1 h1{
+        Font-size:40px;
+    }
+   
+    
+}*/
 
 * {
   box-sizing: border-box;
@@ -183,26 +235,26 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 50%;
+  width: 75%;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 50%;
+  width: 25%;
   padding-left: 20px;
 }
+.w3-bar:after{
+    padding:50px;
+    color: red;
 
+}
 
 /* Fake image */
 .fakeimg {
-  background-color:ghostwhite;
+  background-color:whitesmoke;
   width: 100%;
   padding: 20px;
-}
-.fakeimg img{
-    height: 50%;
-    width: 50%;
 }
 .row hover
 {
@@ -228,59 +280,13 @@ body {
   text-align: center;
   background: #ddd;
   margin-top: 20px;
-}               
-   .data-section {
-                color:blue; 
-            }
-            .data-section h2{
-                color: blue;
-                text-align:left;
-                padding-left: 90px;
-            }
-            .venue-section p{
-                padding-left: 10px;
-            }
-            .evvent{
-                color:red;
-            }
-            .event-section{
-                background-color:gray;
-                padding: 0px;
-            }
-            .form h2{
-                color:red;
-                text-align: left;
-            }
-            .ssss legend{
-                color: red;
-            }
-            .ssss{
-                background-color: gray;
-            }
-            .post-style-1 .image-section{
-                height: 250px;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
-            .post-style-1 p{
-                text-orientation: sideways;
-            }
-           
-
-
-                               
-             
-           
-
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and ( min-width :480px and max-width: 800px) {
+@media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
-
 }
-
 </style>
